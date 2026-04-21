@@ -65,7 +65,6 @@ class TestStreets(unittest.TestCase):
     def test_delete_nonexistent(self):
         self.assertFalse(self.m.delete('ххх'))
 
-
     def test_get_all(self):
         streets = self.m.get_all()
         self.assertEqual(2, len(streets))
@@ -76,5 +75,3 @@ class TestStreets(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
